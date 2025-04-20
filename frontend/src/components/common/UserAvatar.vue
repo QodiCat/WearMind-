@@ -5,8 +5,8 @@
       @click="isOpen = !isOpen"
       ref="avatarRef"
     >
-      <img src="/avatars/default.png" alt="User" />
-      <div v-if="!hasImage" class="avatar-fallback">U</div>
+      <img src="/avatars/default.png" alt="用户" />
+      <div v-if="!hasImage" class="avatar-fallback">用</div>
     </div>
     
     <div 
@@ -16,15 +16,15 @@
     >
       <div class="dropdown-item" @click="handleProfileClick">
         <User class="mr-2 h-4 w-4" />
-        <span>Profile</span>
+        <span>个人中心</span>
       </div>
       <div class="dropdown-item" @click="handleSettingsClick">
         <Settings class="mr-2 h-4 w-4" />
-        <span>Settings</span>
+        <span>设置</span>
       </div>
       <div class="dropdown-item" @click="handleLogoutClick">
         <LogOut class="mr-2 h-4 w-4" />
-        <span>Logout</span>
+        <span>退出登录</span>
       </div>
     </div>
   </div>
@@ -60,7 +60,7 @@ export default defineComponent({
     };
 
     const handleLogoutClick = () => {
-      // Handle logout logic
+      // 处理退出登录逻辑
       isOpen.value = false;
     };
 

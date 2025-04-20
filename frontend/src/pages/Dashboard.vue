@@ -1,56 +1,56 @@
 <template>
   <div class="space-y-6">
-    <h1 class="text-3xl font-bold">Dashboard</h1>
+    <h1 class="text-3xl font-bold">首页</h1>
     
     <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
       <div class="card">
         <div class="card-header">
-          <h2 class="card-title">Today's Outfit</h2>
+          <h2 class="card-title">今日搭配</h2>
           <Shirt class="h-4 w-4 text-muted-foreground" />
         </div>
         <div class="card-content">
-          <div class="text-2xl font-bold">Casual Friday</div>
+          <div class="text-2xl font-bold">休闲星期五</div>
           <p class="text-xs text-muted-foreground">
-            Perfect for the office
+            适合办公室场合
           </p>
         </div>
       </div>
       
       <div class="card">
         <div class="card-header">
-          <h2 class="card-title">AI Recommendations</h2>
+          <h2 class="card-title">AI推荐</h2>
           <Wand2 class="h-4 w-4 text-muted-foreground" />
         </div>
         <div class="card-content">
-          <div class="text-2xl font-bold">3 New</div>
+          <div class="text-2xl font-bold">3个新推荐</div>
           <p class="text-xs text-muted-foreground">
-            Based on your preferences
+            基于您的偏好
           </p>
         </div>
       </div>
       
       <div class="card">
         <div class="card-header">
-          <h2 class="card-title">Style Score</h2>
+          <h2 class="card-title">风格评分</h2>
           <TrendingUp class="h-4 w-4 text-muted-foreground" />
         </div>
         <div class="card-content">
           <div class="text-2xl font-bold">85%</div>
           <p class="text-xs text-muted-foreground">
-            +2% from last week
+            比上周提高2%
           </p>
         </div>
       </div>
       
       <div class="card">
         <div class="card-header">
-          <h2 class="card-title">Upcoming Events</h2>
+          <h2 class="card-title">即将到来的活动</h2>
           <Calendar class="h-4 w-4 text-muted-foreground" />
         </div>
         <div class="card-content">
-          <div class="text-2xl font-bold">2</div>
+          <div class="text-2xl font-bold">2个</div>
           <p class="text-xs text-muted-foreground">
-            Need outfit suggestions
+            需要搭配建议
           </p>
         </div>
       </div>
@@ -59,19 +59,19 @@
     <div class="grid gap-4 md:grid-cols-2">
       <div class="card">
         <div class="card-header">
-          <h2 class="card-title">Recent Outfits</h2>
+          <h2 class="card-title">最近的搭配</h2>
         </div>
         <div class="card-content">
-          <!-- Add recent outfits grid -->
+          <!-- 添加最近的搭配网格 -->
         </div>
       </div>
       
       <div class="card">
         <div class="card-header">
-          <h2 class="card-title">Style Insights</h2>
+          <h2 class="card-title">风格洞察</h2>
         </div>
         <div class="card-content">
-          <!-- Add style insights -->
+          <!-- 添加风格洞察 -->
         </div>
       </div>
     </div>

@@ -1,24 +1,24 @@
 <template>
   <div class="space-y-6">
     <div class="flex justify-between items-center">
-      <h1 class="text-3xl font-bold">Profile</h1>
+      <h1 class="text-3xl font-bold">个人中心</h1>
       <button class="btn btn-primary flex items-center">
         <Settings class="mr-2 h-4 w-4" />
-        Edit Profile
+        编辑资料
       </button>
     </div>
 
     <div class="grid gap-4 md:grid-cols-3">
       <div class="card md:col-span-1">
         <div class="card-header">
-          <h2 class="card-title">Profile Picture</h2>
+          <h2 class="card-title">头像</h2>
         </div>
         <div class="card-content">
           <div class="flex flex-col items-center space-y-4">
             <div class="relative">
               <img
                 src="/avatars/default.png"
-                alt="Profile"
+                alt="头像"
                 class="h-32 w-32 rounded-full"
               />
               <button
@@ -29,7 +29,7 @@
             </div>
             <button class="btn btn-outline flex items-center">
               <Wand2 class="mr-2 h-4 w-4" />
-              Generate AI Avatar
+              生成AI头像
             </button>
           </div>
         </div>
@@ -37,23 +37,23 @@
 
       <div class="card md:col-span-2">
         <div class="card-header">
-          <h2 class="card-title">Personal Information</h2>
+          <h2 class="card-title">个人信息</h2>
         </div>
         <div class="card-content">
           <div class="grid gap-4">
             <div class="grid grid-cols-2 gap-4">
               <div class="space-y-2">
-                <label class="text-sm font-medium">First Name</label>
-                <input type="text" class="input" placeholder="John" />
+                <label class="text-sm font-medium">姓</label>
+                <input type="text" class="input" placeholder="张" />
               </div>
               <div class="space-y-2">
-                <label class="text-sm font-medium">Last Name</label>
-                <input type="text" class="input" placeholder="Doe" />
+                <label class="text-sm font-medium">名</label>
+                <input type="text" class="input" placeholder="三" />
               </div>
             </div>
             <div class="space-y-2">
-              <label class="text-sm font-medium">Email</label>
-              <input type="email" class="input" placeholder="john@example.com" />
+              <label class="text-sm font-medium">邮箱</label>
+              <input type="email" class="input" placeholder="zhangsan@example.com" />
             </div>
           </div>
         </div>
@@ -75,10 +75,10 @@
       <div v-if="activeTab === 'style'" class="tab-content">
         <div class="card">
           <div class="card-header">
-            <h2 class="card-title">Style Preferences</h2>
+            <h2 class="card-title">风格偏好</h2>
           </div>
           <div class="card-content">
-            <!-- Add style preferences form -->
+            <!-- 添加风格偏好表单 -->
           </div>
         </div>
       </div>
@@ -86,10 +86,10 @@
       <div v-if="activeTab === 'body'" class="tab-content">
         <div class="card">
           <div class="card-header">
-            <h2 class="card-title">Body Measurements</h2>
+            <h2 class="card-title">身体数据</h2>
           </div>
           <div class="card-content">
-            <!-- Add body measurements form -->
+            <!-- 添加身体测量表单 -->
           </div>
         </div>
       </div>
@@ -97,10 +97,10 @@
       <div v-if="activeTab === 'virtual'" class="tab-content">
         <div class="card">
           <div class="card-header">
-            <h2 class="card-title">Virtual Model</h2>
+            <h2 class="card-title">虚拟模型</h2>
           </div>
           <div class="card-content">
-            <!-- Add virtual model settings -->
+            <!-- 添加虚拟模型设置 -->
           </div>
         </div>
       </div>
@@ -122,9 +122,9 @@ export default {
   setup() {
     const activeTab = ref('style');
     const tabs = [
-      { label: 'Style Preferences', value: 'style' },
-      { label: 'Body Measurements', value: 'body' },
-      { label: 'Virtual Model', value: 'virtual' }
+      { label: '风格偏好', value: 'style' },
+      { label: '身体数据', value: 'body' },
+      { label: '虚拟模型', value: 'virtual' }
     ];
 
     return {

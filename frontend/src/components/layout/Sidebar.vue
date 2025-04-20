@@ -55,12 +55,12 @@ export default defineComponent({
     const route = useRoute();
     
     const navigation = [
-      { name: 'Dashboard', href: '/', icon: 'Home' },
-      { name: 'My Wardrobe', href: '/wardrobe', icon: 'Shirt' },
-      { name: 'AI Stylist', href: '/stylist', icon: 'Wand2' },
-      { name: 'Virtual Try-On', href: '/try-on', icon: 'Camera' },
-      { name: 'Shop', href: '/shop', icon: 'ShoppingBag' },
-      { name: 'Profile', href: '/profile', icon: 'User' },
+      { name: '首页', href: '/', icon: 'Home' },
+      { name: '我的衣橱', href: '/wardrobe', icon: 'Shirt' },
+      { name: 'AI造型师', href: '/stylist', icon: 'Wand2' },
+      { name: '虚拟试衣间', href: '/try-on', icon: 'Camera' },
+      { name: '智能购物', href: '/shop', icon: 'ShoppingBag' },
+      { name: '个人中心', href: '/profile', icon: 'User' },
     ];
 
     const isActive = (path) => {
